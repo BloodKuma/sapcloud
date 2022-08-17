@@ -1,5 +1,5 @@
 {
-    "_version": "1.40.0",
+    "_version": "1.37.0",
     "sap.app": {
         "id": "ns.risks",
         "type": "application",
@@ -14,6 +14,18 @@
             "id": "@sap/generator-fiori:lrop",
             "version": "1.7.0",
             "toolsId": "be3c596d-5810-484d-b089-e89c1117cc56"
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "Risks-display": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Risks",
+                    "action": "display"
+                }
+            }
         },
         "dataSources": {
             "mainService": {
@@ -141,5 +153,9 @@
     "sap.fiori": {
         "registrationIds": [],
         "archeType": "transactional"
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "cpapp.service"
     }
 }
